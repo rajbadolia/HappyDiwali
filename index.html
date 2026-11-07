@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#100b0b">
+  <meta name="description" content="A Diwali celebration for the people who make our Smart Bazaar shine.">
+  <title>Happy Diwali, Smart Bazaar Family | Made by Raj</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <canvas id="sparkCanvas" aria-hidden="true"></canvas>
+  <div class="topbar">
+    <a class="brand" href="#home" aria-label="Smart Bazaar home">
+      <span class="brand-mark">S</span><span>SMART <b>BAZAAR</b><small>THE FESTIVAL OF TOGETHERNESS</small></span>
+    </a>
+    <button class="sound-toggle" id="soundToggle" aria-label="Toggle sound"><span id="soundIcon">♫</span><span id="soundLabel">MUSIC OFF</span></button>
+  </div>
+
+  <section class="entry-screen" id="entryScreen" aria-label="Welcome to the Diwali celebration">
+    <div class="entry-stars" aria-hidden="true">✦　·　✧　　 ·　✦　　✧　·　✦</div>
+    <div class="entry-mandala" aria-hidden="true"></div>
+    <div class="entry-brand"><span class="entry-lamp">🪔</span><span>RELIANCE <b>SMART BAZAAR</b></span></div>
+    <p class="entry-overline">A FESTIVAL OF LIGHT. A CELEBRATION OF US.</p>
+    <h1>To the people<br>who make every day<br><em>brighter.</em></h1>
+    <p class="entry-copy">This Diwali, this little celebration is not just about lights and wishes. It is about <strong>you</strong> — the people, the effort, and the heart behind our store.</p>
+    <div class="entry-divider"><span></span> WITH GRATITUDE & WARMTH <span></span></div>
+    <button class="entry-open" id="enterBtn">OPEN YOUR DIWALI SURPRISE <span>✦</span></button>
+    <p class="entry-foot">A LITTLE SOMETHING, MADE WITH RESPECT BY RAJ</p>
+    <div class="entry-diyas" aria-hidden="true"><i></i><i></i><i></i></div>
+  </section>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-kicker"><span></span> A FESTIVE TRIBUTE TO OUR STORE FAMILY <span></span></div>
+      <p class="eyebrow">A CELEBRATION DEDICATED TO OUR STORE FAMILY</p>
+      <h1>TOGETHER WE<br><em>MAKE THE LIGHT.</em></h1>
+      <p class="hero-copy">Every smile, every shift, every helping hand — you are the reason our store shines. This celebration is for every one of you.</p>
+      <button class="primary-btn" id="heroExploreBtn">EXPLORE OUR CELEBRATION <span>↗</span></button>
+      <div class="hero-diya" aria-hidden="true"><div class="flame"></div><div class="wick"></div><div class="bowl"></div><div class="diya-glow"></div></div>
+      <div class="scroll-note">SCROLL TO FEEL THE SPIRIT <span>↓</span></div>
+    </section>
+
+    <section class="intro section-pad" id="celebrate">
+      <div class="section-tag">01 / THE HEART OF OUR STORE</div>
+      <div class="intro-grid">
+        <div><p class="eyebrow">BEHIND EVERY BRIGHT MOMENT</p><h2>A STORE IS BUILT<br>BY <em>PEOPLE.</em></h2></div>
+        <div class="intro-text"><p>Every opening shutter, every filled shelf, every customer helped, every challenge handled — there's a person behind it. People who show up, step in, solve things and keep the day moving.</p><p>This Diwali, we're celebrating more than a festival. We're celebrating <strong>the people who make this place feel like a team.</strong></p></div>
+      </div>
+      <div class="stats-row"><div><strong>ONE</strong><span>STORE</span></div><i></i><div><strong>MANY</strong><span>ROLES</span></div><i></i><div><strong>ONE</strong><span>FAMILY</span></div></div>
+    </section>
+
+    <section class="leaders section-pad">
+      <div class="section-tag">02 / LEADERS WHO LIGHT THE WAY</div>
+      <div class="section-heading"><p class="eyebrow">LEADERSHIP WITH PURPOSE</p><h2>To our <em>SM & DM.</em></h2><p class="muted">Different responsibilities. One shared goal: making our store better every day.</p></div>
+      <div class="leader-grid">
+        <article class="leader-card">
+          <div class="card-index">01 <span>THE BIG PICTURE</span></div><div class="ornament">✦</div>
+          <p class="eyebrow">STORE MANAGER</p><h3>To our SM</h3>
+          <p>Thank you for carrying the bigger picture, making the tough calls and guiding the store through every kind of day. Your leadership sets the direction, and your commitment helps bring the whole team together.</p>
+          <div class="card-foot">RESPECT · GUIDANCE · LEADERSHIP</div>
+        </article>
+        <article class="leader-card featured">
+          <div class="card-index">02 <span>THE DAILY DRIVE</span></div><div class="ornament">✧</div>
+          <p class="eyebrow">DEPARTMENT MANAGER</p><h3>To our DM</h3>
+          <p>Thank you for keeping the department moving, balancing a hundred little details and standing with the team through the rush. Your effort turns plans into progress, one shift at a time.</p>
+          <div class="card-foot">DEDICATION · TEAMWORK · ACTION</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="team section-pad">
+      <div class="section-tag">03 / THE PEOPLE MAKE THE PLACE</div>
+      <div class="section-heading"><p class="eyebrow">TO EVERY SINGLE TEAM MEMBER</p><h2>Every role.<br><em>Every effort.</em></h2><p class="muted">Tap a diya. Each one carries a little appreciation for the people who keep our store glowing.</p></div>
+      <div class="diya-grid" id="diyaGrid">
+        <button class="diya-tile" data-title="The Frontline" data-message="For the smiles, patience and care you share with every customer. You make the first impression count."><span>✦</span><b>FRONTLINE</b><small>THE WELCOME</small></button>
+        <button class="diya-tile" data-title="The Back of House" data-message="For the stock, the checks, the GRNs, the details and all the work customers may never see. You keep the engine running."><span>✧</span><b>BACK OF HOUSE</b><small>THE ENGINE</small></button>
+        <button class="diya-tile" data-title="The Floor Team" data-message="For every aisle made ready, every product placed right and every little thing noticed before it becomes a big thing."><span>✦</span><b>FLOOR TEAM</b><small>THE STORE'S RHYTHM</small></button>
+        <button class="diya-tile" data-title="The Fresh & Food Teams" data-message="For the care, freshness and effort you bring to the products our customers take home. Your work matters every day."><span>✧</span><b>FRESH & FOOD</b><small>CARE IN EVERY DETAIL</small></button>
+        <button class="diya-tile housekeeping-tile" data-title="Our Housekeeping Heroes" data-message="To our housekeeping team: before the store gets busy, your care has already made a difference. Every clean aisle, every shining floor and every corner you look after helps make our store welcoming for everyone. So much of your hard work happens quietly, but its impact is seen by every person who walks through our doors. From my heart, thank you. You are not behind the scenes to us — you are an important part of the team, and our store shines brighter because of you."><span>✧</span><b>HOUSEKEEPING</b><small>THE QUIET HEROES</small></button>
+        <button class="diya-tile" data-title="The Support Crew" data-message="For fixing, helping, arranging and stepping in wherever needed. Your support makes the whole team stronger."><span>✦</span><b>SUPPORT CREW</b><small>ALWAYS THERE</small></button>
+        <button class="diya-tile" data-title="Every one of you" data-message="Whatever your role, shift or department — this celebration belongs to you. Thank you for being part of our store family."><span>✧</span><b>EVERYONE</b><small>ONE STORE FAMILY</small></button>
+      </div>
+      <div class="tap-hint">✦ SELECT ANY LIGHT TO REVEAL A MESSAGE ✦</div>
+    </section>
+
+    <section class="wish section-pad">
+      <div class="wish-frame">
+        <div class="wish-symbol">ॐ</div><p class="eyebrow">MAY THE LIGHTS OF DIWALI</p>
+        <h2>BRING PEACE TO YOUR HOME,<br><em>PRIDE TO YOUR WORK,</em><br>AND JOY TO YOUR HEART.</h2>
+        <p>Wishing our respected SM, our DM, and every member of our Smart Bazaar team and their families a beautiful, safe and prosperous Diwali.</p>
+        <div class="wish-signoff">HAPPY DIWALI <span>✦</span> SHUBH DEEPAWALI</div>
+      </div>
+    </section>
+
+    <section class="guestbook section-pad" id="leaveWish">
+      <div class="section-tag">05 / YOUR TURN TO ADD A LITTLE LIGHT</div>
+      <div class="guestbook-wrap">
+        <div class="guestbook-copy">
+          <p class="eyebrow">A LITTLE SECRET WISH, A BIG SMILE</p>
+          <h2>LEAVE A LITTLE<br><em>DIWALI MAGIC.</em></h2>
+          <p>Got a wish for the team? A thank-you for someone? Or just a little message from your heart? Leave it here. We'll collect everyone's messages in our Diwali memory book.</p>
+          <div class="guestbook-note"><span>✦</span> Your message will be saved to our team's Google Sheet.</div>
+        </div>
+        <form class="wish-form custom-wish-form" id="wishForm">
+          <div class="embedded-form-heading"><span class="embedded-star">✦</span><div><strong>LEAVE YOUR SECRET WISH</strong><small>Your words become part of our team's Diwali memory book.</small></div><span class="embedded-star">✦</span></div>
+          <label for="wishName">YOUR NAME <span>(required)</span></label>
+          <input id="wishName" name="name" type="text" maxlength="80" placeholder="What should we call you?" autocomplete="name" required>
+          <label for="wishMessage">YOUR LITTLE DIWALI WISH <span>(required)</span></label>
+          <textarea id="wishMessage" name="wish" maxlength="500" rows="5" placeholder="A wish, a thank-you, or a little message from your heart…" required></textarea>
+          <div class="wish-form-bottom"><small id="wishCounter">0 / 500</small><button class="primary-btn" id="wishSubmit" type="submit">SEND MY WISH <span>✦</span></button></div>
+          <p class="form-status" id="wishStatus" role="status" aria-live="polite">Your name and wish will be added to our Diwali memory book. 🪔</p>
+        </form>
+        <iframe name="googleWishSink" id="googleWishSink" title="" aria-hidden="true" tabindex="-1" style="position:absolute;width:1px;height:1px;opacity:0;pointer-events:none;border:0"></iframe>
+      </div>
+    </section>
+
+    <section class="raj-note section-pad">
+      <div class="section-tag">04 / A NOTE FROM THE PERSON BEHIND THIS PAGE</div>
+      <div class="raj-note-card">
+        <div class="raj-note-mark">R.</div>
+        <p class="eyebrow">NOT A BIG SPEECH. JUST SOMETHING FROM ME.</p>
+        <h2>A LITTLE THANK YOU,<br><em>FROM MY SIDE.</em></h2>
+        <p>To my Smart Bazaar family — I may not say it every day, but I see the effort people put in. I see the busy shifts, the pressure, the teamwork, the helping hands and the little things that keep our store going.</p>
+        <p>I made this small corner of the internet because I wanted everyone to feel included and appreciated — from our SM and DM to every department, every colleague, and especially the people whose hard work often happens quietly.</p>
+        <p>No role is too small. No honest effort is invisible. I'm glad to be one part of this team, and I'm wishing all of you and your families happiness, good health and a bright year ahead.</p>
+        <div class="raj-signature">With respect & festive wishes,<br><strong>Raj</strong></div>
+      </div>
+    </section>
+
+    <section class="finale section-pad">
+      <p class="eyebrow">THE LAST LIGHT IS FOR YOU</p>
+      <h2>WE DON'T JUST<br>WORK TOGETHER.<br><em>WE SHINE TOGETHER.</em></h2>
+      <p>Here's to the late finishes, early starts, busy days, small wins, shared laughs and the people who make it all worthwhile.</p>
+      <button class="primary-btn finale-btn" id="celebrateBtn">LAUNCH THE GRAND FINALE <span>✦</span></button><p class="finale-hint">TURN YOUR SOUND ON FOR THE FULL EXPERIENCE</p>
+      <div class="final-credit"><span>AN APPRECIATION PROJECT</span><strong>CRAFTED WITH ♥ BY <b>RAJ</b></strong><span>FOR THE SMART BAZAAR STORE FAMILY</span></div>
+    </section>
+  </main>
+
+  <footer><span>SMART BAZAAR · ONE TEAM, INFINITE LIGHT</span><span>MADE WITH RESPECT & A LITTLE FESTIVE MAGIC ✦</span></footer>
+
+  <div class="modal" id="messageModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card"><button class="modal-close" id="modalClose" aria-label="Close">×</button><div class="modal-star">✦</div><p class="eyebrow">A LITTLE LIGHT FOR YOU</p><h3 id="modalTitle"></h3><p id="modalMessage"></p><span class="modal-bottom">YOU MAKE OUR STORE SHINE</span></div>
+  </div>
+  <div class="toast" id="toast">THE NIGHT IS YOURS ✦</div>
+  <script src="script.js"></script>
+</body>
+</html>
